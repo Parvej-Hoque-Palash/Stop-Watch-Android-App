@@ -16,8 +16,6 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
-
-    //declaration of global variables
     private int sec = 0;
     private boolean isRunning;
     private boolean wasRunning;
@@ -39,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
         startTimer();
     }
 
-
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState)
     {
@@ -48,8 +45,6 @@ public class MainActivity extends AppCompatActivity {
         savedInstanceState.putBoolean("running", isRunning);
         savedInstanceState.putBoolean("wasRunning", wasRunning);
     }
-
-
 
     @Override
     protected void onPause()
@@ -76,7 +71,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
     public void Stop(View view)
     {
         isRunning = false;
@@ -100,7 +94,6 @@ public class MainActivity extends AppCompatActivity {
 
         hd.post(new Runnable() {
             @Override
-
 
             public void run()
             {
